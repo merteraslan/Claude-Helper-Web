@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Predefined list of images
     const images = [
-        '/assets/media/1.png',
-        '/assets/media/2.png',
-        '/assets/media/3.png',
-        '/assets/media/4.png',
+        'assets/media/1.png',
+        'assets/media/2.png',
+        'assets/media/3.png',
+        'assets/media/4.png',
         // Add more image paths as needed
     ];
 
