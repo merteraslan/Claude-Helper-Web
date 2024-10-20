@@ -393,21 +393,21 @@ iframe.twitter-follow-button {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 0; /* Removed gap completely */
+  gap: 0;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .social-buttons > * {
   width: 100% !important;
-  height: 36px !important; /* Ensure consistent height */
+  height: 36px !important;
 }
 
 /* Adjust the Twitter button */
 .social-buttons .twitter-follow-button {
   max-width: none !important;
   height: 36px !important;
-  border-radius: 6px 6px 6px 6px !important; /* Rounded top corners only */
+  border-radius: 6px 6px 6px 6px !important;
   overflow: hidden;
   display: flex !important;
   align-items: center !important;
@@ -418,7 +418,7 @@ iframe.twitter-follow-button {
   font-family: "Be Vietnam Pro", sans-serif !important;
   font-size: 14px !important;
   font-weight: 600 !important;
-  margin-bottom: 0 !important; /* Remove any bottom margin */
+  margin-bottom: 0 !important;
 }
 
 /* Adjust the Buy Me A Coffee button */
@@ -427,9 +427,9 @@ iframe.twitter-follow-button {
   line-height: 36px !important;
   min-width: 160px !important;
   padding: 0 10px !important;
-  border-radius: 0 0 6px 6px !important; /* Rounded bottom corners only */
-  margin-top: 0 !important; /* Remove any top margin */
-  transition: none !important; /* Remove transition */
+  border-radius: 0 0 6px 6px !important;
+  margin-top: 0 !important;
+  transition: none !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -446,17 +446,21 @@ iframe.twitter-follow-button {
 /* Adjust the coffee icon */
 .social-buttons #bmc-wbtn img {
   margin-right: 5px !important;
+  height: 20px !important;
+  width: auto !important;
 }
 
-/* Hide the iframe that Twitter creates */
-iframe.twitter-follow-button {
-  display: none !important;
+/* Adjust the text style */
+.social-buttons #bmc-wbtn .bmc-btn-text {
+  font-family: "Be Vietnam Pro", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
 }
 
 /* Remove hover effects for Buy Me A Coffee button */
 .social-buttons #bmc-wbtn:hover {
-  background-color: #FFDD00 !important; /* Keep the original background color */
-  color: #000000 !important; /* Keep the original text color */
+  background-color: #FFDD00 !important;
+  color: #000000 !important;
 }
 
 /* Ensure the coffee icon doesn't change on hover */
