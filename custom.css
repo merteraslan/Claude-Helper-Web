@@ -210,11 +210,15 @@ strong {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
 }
 
 .sidebar-buttons .button {
     width: 100%;
     text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 6px;
 }
 
 .store-badge {
@@ -405,11 +409,15 @@ iframe.twitter-follow-button {
     padding: 0 10px !important;
     width: 100% !important;
     font-size: 14px !important;
+    border-radius: 6px !important;
 }
 
 /* Adjust the Twitter button */
 .social-buttons .twitter-follow-button {
     max-width: none !important;
+    height: 36px !important;
+    border-radius: 6px !important;
+    overflow: hidden;
 }
 
 /* Remove any conflicting styles */

@@ -21,9 +21,6 @@ layout: default
                 <button class="carousel-button next">&gt;</button>
             </div>
             
-            <h1>Claude Helper</h1>
-            <p>Enhance your Claude AI experience with bulk uploads and quick resets</p>
-
             <h2>What It Does</h2>
             <p>Claude Helper enhances your Claude AI experience by adding two essential features:</p>
             <ol>
