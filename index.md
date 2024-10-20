@@ -40,7 +40,7 @@
             <p>Enhance your Claude AI experience with bulk uploads and quick resets</p>
 
             <a href="https://chromewebstore.google.com/detail/claude-helper/nfgojpifghedgeflgnliekadidggnnih" target="_blank">
-                <img src="chrome-web-store.png" alt="Available in the Chrome Web Store" class="chrome-web-store-badge">
+                <img src="assets/images/chrome-web-store.png" alt="Available in the Chrome Web Store" class="chrome-web-store-badge">
             </a>
 
             <h3>View Versions and Patch Notes</h3>
@@ -56,20 +56,18 @@
     </div>
 
     <div class="container">
-        <div class="versions-container">
-            <h2>Versions and Patch Notes</h2>
-            <p>Stay up to date with the latest improvements and fixes for Claude Helper.</p>
-            <ul>
-                <li><strong>Version 1.3.0</strong> <span class="new-tag">NEW</span></li>
-            </ul>
-            <a href="changelog.html" class="button">View Full Changelog</a>
-        </div>
+        <h2>Versions and Patch Notes</h2>
+        <p>Stay up to date with the latest improvements and fixes for Claude Helper.</p>
+        <ul>
+            <li><strong>Version 1.3.0</strong> <span class="new-tag">NEW</span></li>
+        </ul>
+        <a href="changelog.html" class="button">View Full Changelog</a>
+    </div>
 
-        <div class="privacy-container">
-            <h2>Privacy Policy</h2>
-            <p>We take your privacy seriously. Read our privacy policy to understand how we handle your data.</p>
-            <a href="privacy-policy.html" class="button">Read Privacy Policy</a>
-        </div>
+    <div class="container">
+        <h2>Privacy Policy</h2>
+        <p>We take your privacy seriously. Read our privacy policy to understand how we handle your data.</p>
+        <a href="privacy-policy.html" class="button">Read Privacy Policy</a>
     </div>
 
 </body>

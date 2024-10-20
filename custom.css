@@ -71,36 +71,29 @@ strong {
 
 .container {
     display: flex;
-    flex-direction: column;
-    max-width: 1000px;
+    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .main-content {
     flex: 1;
-    margin-right: 0;
-    margin-bottom: 40px;
+    margin-right: 40px;
 }
 
 .sidebar {
-    width: 100%;
+    width: 300px;
     padding: 20px;
     background-color: var(--container-bg);
     border-radius: 5px;
-    margin-bottom: 40px;
 }
 
 .chrome-web-store-badge {
-    max-width: 250px;
+    max-width: 100%;
     height: auto;
     margin: 20px 0;
-}
-
-.cta-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: block;
 }
 
 .button {
@@ -115,7 +108,7 @@ strong {
     font-weight: 600;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .button:hover {
@@ -134,14 +127,6 @@ strong {
     font-weight: bold;
 }
 
-.versions-container,
-.privacy-container {
-    background-color: var(--container-bg);
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
 @media (max-width: 600px) {
     body {
         padding: 20px 15px;
@@ -157,27 +142,5 @@ strong {
 
     .container {
         padding: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .main-content {
-        flex: 2;
-        margin-right: 40px;
-    }
-
-    .sidebar {
-        width: 300px;
-        margin-bottom: 0;
-    }
-
-    .versions-container,
-    .privacy-container {
-        width: calc(50% - 20px);
     }
 }
