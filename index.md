@@ -43,9 +43,15 @@
         <h2>Versions and Patch Notes</h2>
         <p>Stay up to date with the latest improvements and fixes for Claude Helper.</p>
         <ul>
-            <li><strong>Version 1.0.0</strong> <span class="new-tag">NEW</span></li>
+            <li><strong>Version 1.3.0</strong> <span class="new-tag">NEW</span></li>
         </ul>
-        <a href="versions.html" class="button">View Detailed Patch Notes</a>
+        <a href="changelog.md" class="button">View Full Changelog</a>
+    </div>
+
+    <div class="container">
+        <h2>Privacy Policy</h2>
+        <p>We take your privacy seriously. Read our privacy policy to understand how we handle your data.</p>
+        <a href="privacy-policy.md" class="button">Read Privacy Policy</a>
     </div>
 
 </body>

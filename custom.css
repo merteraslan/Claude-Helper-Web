@@ -75,12 +75,6 @@ strong {
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .button {
@@ -94,14 +88,14 @@ strong {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
     margin-top: 20px;
 }
 
 .button:hover {
     background-color: var(--hover-color);
+    color: var(--text-color);
     text-decoration: none;
-    transform: translateY(-2px);
 }
 
 .new-tag {
