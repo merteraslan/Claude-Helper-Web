@@ -191,12 +191,35 @@ strong {
     vertical-align: middle;
 }
 
-.tag-added { background-color: #28a745; color: white; }
-.tag-changed { background-color: #ffc107; color: black; }
-.tag-deprecated { background-color: #fd7e14; color: white; }
-.tag-removed { background-color: #dc3545; color: white; }
-.tag-fixed { background-color: #17a2b8; color: white; }
-.tag-security { background-color: #6610f2; color: white; }
+.tag-added {
+    background-color: #28a745;
+    color: white;
+}
+
+.tag-changed {
+    background-color: #ffc107;
+    color: black;
+}
+
+.tag-deprecated {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.tag-removed {
+    background-color: #dc3545;
+    color: white;
+}
+
+.tag-fixed {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.tag-security {
+    background-color: #6610f2;
+    color: white;
+}
 
 /* Add these new styles at the end of the file */
 
@@ -293,7 +316,8 @@ h2 .tag {
     margin: 0 auto 30px;
     overflow: hidden;
     border-radius: 8px;
-    border: 1px solid var(--accent-color); /* Add this line */
+    border: 1px solid var(--accent-color);
+    /* Add this line */
 }
 
 .carousel-slide {
@@ -336,6 +360,27 @@ h2 .tag {
 
 /* Add these styles at the end of the file */
 
+.bmc-btn {
+    width: 100% !important;
+    margin-top: 10px !important;
+    height: auto !important;
+    line-height: 36px !important;
+    border-radius: 6px !important;
+}
+
+.bmc-btn-text {
+    font-family: "Be Vietnam Pro", sans-serif !important;
+    font-size: 14px !important;
+}
+
+.x-logo {
+    height: 1em;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Add these styles at the end of the file */
+
 .twitter-follow-button {
     margin-bottom: 10px !important;
 }
@@ -348,83 +393,104 @@ iframe.twitter-follow-button {
 
 /* Existing styles... */
 
-.social-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 1px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.social-buttons > * {
-  width: 100% !important;
-  height: 36px !important;
+.footer-buttons>* {
+    margin: 0 5px;
+}
+
+/* Adjust the size of the Buy Me A Coffee button to match the Twitter button */
+.footer-buttons #bmc-wbtn {
+    height: 28px !important;
+    line-height: 28px !important;
+    min-width: 160px !important;
+    padding: 0 10px !important;
+}
+
+/* Update these styles */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1px;
+    /* Add a small gap between buttons */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social-buttons>* {
+    width: 100% !important;
+    height: 36px !important;
 }
 
 /* Adjust the Twitter button */
 .social-buttons .twitter-follow-button {
-  max-width: none !important;
-  height: 36px !important;
-  border-radius: 6px !important;
-  overflow: hidden;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background-color: black !important;
-  color: white !important;
-  text-decoration: none !important;
-  font-family: "Be Vietnam Pro", sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
+    max-width: none !important;
+    height: 36px !important;
+    border-radius: 6px !important;
+    overflow: hidden;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: black !important;
+    color: white !important;
+    text-decoration: none !important;
+    font-family: "Be Vietnam Pro", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
 }
 
 /* Adjust the Buy Me A Coffee button */
 .social-buttons #bmc-wbtn {
-  height: 36px !important;
-  line-height: 36px !important;
-  min-width: 160px !important;
-  padding: 0 10px !important;
-  border-radius: 6px !important;
-  background-color: #FFDD00 !important;
-  color: #000000 !important;
-  font-family: "Cookie", cursive !important;
-  font-size: 18px !important;
-  font-weight: normal !important;
-  text-decoration: none !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-  transition: all 0.3s ease !important;
-  border: 1px solid #000000 !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    min-width: 160px !important;
+    padding: 0 10px !important;
+    border-radius: 6px !important;
+    background-color: #FFDD00 !important;
+    color: #000000 !important;
+    font-family: "Cookie", cursive !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid #000000 !important;
 }
 
 /* Center-align the text and icon within the button */
 .social-buttons #bmc-wbtn .bmc-btn-text,
 .social-buttons #bmc-wbtn .bmc-btn-icon {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 /* Adjust the coffee icon */
 .social-buttons #bmc-wbtn img {
-  height: 20px !important;
-  width: auto !important;
-  margin-right: 5px !important;
+    height: 20px !important;
+    width: auto !important;
+    margin-right: 5px !important;
 }
 
 /* Hide the iframe that Twitter creates */
 iframe.twitter-follow-button {
-  display: none !important;
+    display: none !important;
 }
 
 /* Add hover effect for Buy Me A Coffee button */
 .social-buttons #bmc-wbtn:hover {
-  background-color: #FFDD00 !important;
-  color: #000000 !important;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
+    background-color: #FFDD00 !important;
+    color: #000000 !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Ensure the coffee icon doesn't change on hover */
 .social-buttons #bmc-wbtn:hover img {
-  filter: none !important;
+    filter: none !important;
 }
