@@ -42,7 +42,10 @@
     <div class="container">
         <h2>Versions and Patch Notes</h2>
         <p>Stay up to date with the latest improvements and fixes for Claude Helper.</p>
-        <a href="versions.html" class="button">View Versions and Patch Notes</a>
+        <ul>
+            <li><strong>Version 1.0.0</strong> <span class="new-tag">NEW</span></li>
+        </ul>
+        <a href="versions.html" class="button">View Detailed Patch Notes</a>
     </div>
 
 </body>
