@@ -360,3 +360,24 @@ iframe.twitter-follow-button {
     width: 100% !important;
     max-width: none !important;
 }
+
+/* Existing styles... */
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-buttons > * {
+  margin: 0 5px;
+}
+
+/* Adjust the size of the Buy Me A Coffee button to match the Twitter button */
+.footer-buttons #bmc-wbtn {
+  height: 28px !important;
+  line-height: 28px !important;
+  min-width: 160px !important;
+  padding: 0 10px !important;
+}
