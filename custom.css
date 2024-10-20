@@ -348,3 +348,15 @@ h2 .tag {
   margin-right: 5px;
   vertical-align: middle;
 }
+
+/* Add these styles at the end of the file */
+
+.twitter-follow-button {
+    margin-bottom: 10px !important;
+}
+
+/* Adjust the iframe that Twitter creates */
+iframe.twitter-follow-button {
+    width: 100% !important;
+    max-width: none !important;
+}
