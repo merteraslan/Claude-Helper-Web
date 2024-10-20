@@ -417,21 +417,20 @@ iframe.twitter-follow-button {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 1px;
-    /* Add a small gap between buttons */
+    gap: 10px; /* Increased gap for better separation */
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.social-buttons>* {
+.social-buttons > * {
     width: 100% !important;
-    height: 36px !important;
+    height: 40px !important; /* Increased height for both buttons */
 }
 
-/* Adjust the Twitter button */
+/* Adjust the X (Twitter) button */
 .social-buttons .twitter-follow-button {
     max-width: none !important;
-    height: 36px !important;
+    height: 40px !important; /* Match the height of the Buy Me A Coffee button */
     border-radius: 6px !important;
     overflow: hidden;
     display: flex !important;
@@ -445,21 +444,9 @@ iframe.twitter-follow-button {
     font-weight: 600 !important;
 }
 
-/* Add hover effect for Buy Me A Coffee button */
-.social-buttons #bmc-wbtn:hover {
-    background-color: #FFDD00 !important;
-    color: #000000 !important;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Ensure the coffee icon doesn't change on hover */
-.social-buttons #bmc-wbtn:hover img {
-    filter: none !important;
-}
-
-/* Add these new styles for the Buy Me A Coffee button */
+/* Adjust the Buy Me A Coffee button */
 .social-buttons .bmc-button {
-    height: 36px !important;
+    height: 40px !important; /* Match the height of the X button */
     width: 100% !important;
     display: flex !important;
     align-items: center !important;
@@ -469,7 +456,14 @@ iframe.twitter-follow-button {
 }
 
 .social-buttons .bmc-button img {
-    height: 36px !important;
+    height: 40px !important; /* Match the button height */
     width: auto !important;
     object-fit: cover !important;
+}
+
+/* Add hover effect for both buttons */
+.social-buttons .twitter-follow-button:hover,
+.social-buttons .bmc-button:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
 }
