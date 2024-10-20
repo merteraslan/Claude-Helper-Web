@@ -393,9 +393,9 @@ iframe.twitter-follow-button {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 5px; /* Reduced from 10px */
-  margin-top: 10px; /* Reduced from 15px */
-  margin-bottom: 10px; /* Added to reduce bottom margin */
+  gap: 0px; /* Reduced from 10px */
+  margin-top: 5px; /* Reduced from 15px */
+  margin-bottom: 5px; /* Added to reduce bottom margin */
 }
 
 .social-buttons > * {
@@ -412,7 +412,7 @@ iframe.twitter-follow-button {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  background-color: #1DA1F2 !important; /* Twitter blue color */
+  background-color: black !important; /* Twitter blue color */
   color: white !important;
   text-decoration: none !important;
   font-family: "Be Vietnam Pro", sans-serif !important;
@@ -421,7 +421,7 @@ iframe.twitter-follow-button {
 }
 
 .social-buttons .twitter-follow-button:hover {
-  background-color: #0c85d0 !important; /* Darker shade for hover */
+  background-color: rgb(36, 36, 36) !important; /* Darker shade for hover */
 }
 
 /* Adjust the iframe that Twitter creates */
