@@ -10,7 +10,7 @@ title: Changelog
 
             <p>All notable changes to the Claude Helper extension will be documented in this file.</p>
 
-            <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+            <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>,
             and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 
             <div class="version-container current-version">
