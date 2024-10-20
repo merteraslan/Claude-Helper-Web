@@ -40,17 +40,11 @@
                 <h2>Claude Helper</h2>
                 <p>Enhance your Claude AI experience with bulk uploads and quick resets</p>
 
-                <a href="https://chromewebstore.google.com/detail/claude-helper/nfgojpifghedgeflgnliekadidggnnih" target="_blank">
-                    <img src="assets/images/chrome-web-store.png" alt="Available in the Chrome Web Store" class="store-badge">
+                {% for badge in site.store_badges %}
+                <a href="{{ badge.url }}" target="_blank">
+                    <img src="{{ badge.image }}" alt="{{ badge.alt }}" class="store-badge">
                 </a>
-
-                <a href="https://microsoftedge.microsoft.com/addons/detail/claude-helper/ofajodelpeagpgmdembbkhphfjoojdck" target="_blank">
-                    <img src="assets/images/edge-web-store.svg" alt="Get it for Microsoft Edge" class="store-badge">
-                </a>
-
-                <a href="https://addons.mozilla.org/en-US/firefox/addon/claude-helper/" target="_blank">
-                    <img src="assets/images/firefox-web-store.svg" alt="Get it for Firefox" class="store-badge">
-                </a>
+                {% endfor %}
 
                 <h3>View Versions and Patch Notes</h3>
                 <ul>
