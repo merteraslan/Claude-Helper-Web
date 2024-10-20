@@ -393,9 +393,9 @@ iframe.twitter-follow-button {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 0px; /* Reduced from 10px */
-  margin-top: 5px; /* Reduced from 15px */
-  margin-bottom: 5px; /* Added to reduce bottom margin */
+  gap: 5px; /* Reduced from 10px */
+  margin-top: 10px; /* Reduced from 15px */
+  margin-bottom: 10px; /* Added to reduce bottom margin */
 }
 
 .social-buttons > * {
@@ -403,25 +403,22 @@ iframe.twitter-follow-button {
   height: 36px !important; /* Ensure consistent height */
 }
 
-/* Adjust the Twitter button */
+/* Add these new styles for the Buy Me a Coffee button */
+.bmc-btn {
+  transition: background-color 0.3s ease !important;
+}
+
+.bmc-btn:hover {
+  background-color: #e6c700 !important; /* Darker shade of yellow for hover */
+}
+
+/* Adjust the Twitter button styles */
 .social-buttons .twitter-follow-button {
-  max-width: none !important;
-  height: 36px !important;
-  border-radius: 6px !important;
-  overflow: hidden;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background-color: black !important; /* Twitter blue color */
-  color: white !important;
-  text-decoration: none !important;
-  font-family: "Be Vietnam Pro", sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
+  transition: background-color 0.3s ease !important;
 }
 
 .social-buttons .twitter-follow-button:hover {
-  background-color: rgb(36, 36, 36) !important; /* Darker shade for hover */
+  background-color: #242424 !important; /* Darker shade for hover */
 }
 
 /* Adjust the iframe that Twitter creates */
