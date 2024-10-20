@@ -194,3 +194,29 @@ strong {
 .tag-removed { background-color: #dc3545; color: white; }
 .tag-fixed { background-color: #17a2b8; color: white; }
 .tag-security { background-color: #6610f2; color: white; }
+
+/* Add these new styles at the end of the file */
+
+.separator {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid var(--accent-color);
+}
+
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-buttons .button {
+    width: 100%;
+    text-align: center;
+}
+
+.store-badge {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}

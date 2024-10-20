@@ -38,18 +38,6 @@ layout: default
                 <li><strong>Remove All Files</strong>: Quickly clear all uploaded files from your project with a single click.</li>
             </ul>
         </div>
-
-        <div class="sidebar">
-            <div class="section">
-                <h2>Provide Feedback</h2>
-                <p>Help us improve Claude Helper by sharing your thoughts and suggestions.</p>
-                <a href="https://github.com/merteraslan/claudehelper/issues" class="button secondary-button">Provide Feedback</a>
-            </div>
-
-            <div class="section">
-                <a href="privacy-policy.html" class="button secondary-button">Read Privacy Policy</a>
-            </div>
-        </div>
     </div>
 
 </body>

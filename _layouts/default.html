@@ -39,6 +39,14 @@
           <img src="{{ '/assets/images/firefox-web-store.svg' | relative_url }}" alt="Get it for Firefox" class="store-badge">
         </a>
 
+        <!-- Add separator and new buttons -->
+        <hr class="separator">
+
+        <div class="sidebar-buttons">
+          <a href="https://github.com/merteraslan/claudehelper/issues" class="button secondary-button">Provide Feedback</a>
+          <a href="privacy-policy.html" class="button secondary-button">Read Privacy Policy</a>
+        </div>
+
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
