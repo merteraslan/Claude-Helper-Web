@@ -45,13 +45,13 @@
         <ul>
             <li><strong>Version 1.3.0</strong> <span class="new-tag">NEW</span></li>
         </ul>
-        <a href="changelog.html" class="button">View Full Changelog</a>
+        <a href="changelog.md" class="button">View Full Changelog</a>
     </div>
 
     <div class="container">
         <h2>Privacy Policy</h2>
         <p>We take your privacy seriously. Read our privacy policy to understand how we handle your data.</p>
-        <a href="privacy-policy.html" class="button">Read Privacy Policy</a>
+        <a href="privacy-policy.md" class="button">Read Privacy Policy</a>
     </div>
 
 </body>
