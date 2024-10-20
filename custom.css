@@ -71,10 +71,16 @@ strong {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .main-content {
@@ -93,6 +99,13 @@ strong {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
+    display: block;
+}
+
+.store-badge {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -127,6 +140,28 @@ strong {
     font-weight: bold;
 }
 
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
 @media (max-width: 600px) {
     body {
         padding: 20px 15px;
@@ -142,5 +177,14 @@ strong {
 
     .container {
         padding: 20px;
+    }
+
+    .cta-container {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
     }
 }
