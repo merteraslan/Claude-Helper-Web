@@ -25,6 +25,19 @@
         <p class="view"><a href="{{ site.github.versions_url }}">View Versions and Patch Notes</a></p>
         {% endif %}
 
+        <!-- New badge links -->
+        <a href="https://chromewebstore.google.com/detail/claude-helper/nfgojpifghedgeflgnliekadidggnnih" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/chrome-web-store.png' | relative_url }}" alt="Available in the Chrome Web Store" class="store-badge">
+        </a>
+
+        <a href="https://microsoftedge.microsoft.com/addons/detail/claude-helper/ofajodelpeagpgmdembbkhphfjoojdck" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/edge-web-store.svg' | relative_url }}" alt="Get it for Microsoft Edge" class="store-badge">
+        </a>
+
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/claude-helper/" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/firefox-web-store.svg' | relative_url }}" alt="Get it for Firefox" class="store-badge">
+        </a>
+
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>

@@ -40,12 +40,6 @@
                 <h2>Claude Helper</h2>
                 <p>Enhance your Claude AI experience with bulk uploads and quick resets</p>
 
-                {% for badge in site.store_badges %}
-                <a href="{{ badge.url }}" target="_blank">
-                    <img src="{{ badge.image }}" alt="{{ badge.alt }}" class="store-badge">
-                </a>
-                {% endfor %}
-
                 <h3>View Versions and Patch Notes</h3>
                 <ul>
                     <li><a href="changelog.html">Changelog</a></li>

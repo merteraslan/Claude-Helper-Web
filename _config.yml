@@ -7,18 +7,3 @@ show_downloads: false
 github:
   is_project_page: true
   versions_url: versions.html
-
-# New section for store badges
-store_badges:
-  - name: Chrome Web Store
-    url: https://chromewebstore.google.com/detail/claude-helper/nfgojpifghedgeflgnliekadidggnnih
-    image: assets/images/chrome-web-store.png
-    alt: Available in the Chrome Web Store
-  - name: Microsoft Edge Add-ons
-    url: https://microsoftedge.microsoft.com/addons/detail/claude-helper/ofajodelpeagpgmdembbkhphfjoojdck
-    image: assets/images/edge-web-store.svg
-    alt: Get it for Microsoft Edge
-  - name: Firefox Add-ons
-    url: https://addons.mozilla.org/en-US/firefox/addon/claude-helper/
-    image: assets/images/firefox-web-store.svg
-    alt: Get it for Firefox
