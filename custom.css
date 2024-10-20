@@ -288,6 +288,7 @@ h2 .tag {
     margin: 0 auto 30px;
     overflow: hidden;
     border-radius: 8px;
+    border: 1px solid var(--accent-color); /* Add this line */
 }
 
 .carousel-slide {
@@ -381,3 +382,38 @@ iframe.twitter-follow-button {
   min-width: 160px !important;
   padding: 0 10px !important;
 }
+
+/* Update these styles */
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.social-buttons > * {
+  flex: 1;
+  margin: 0 5px;
+}
+
+/* Adjust the size of the Buy Me A Coffee button to match the Twitter button */
+.social-buttons #bmc-wbtn {
+  height: 28px !important;
+  line-height: 28px !important;
+  min-width: 0 !important;
+  padding: 0 10px !important;
+  width: 100% !important;
+}
+
+/* Adjust the Twitter button */
+.social-buttons .twitter-follow-button {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Remove the old footer-buttons styles if they're no longer needed */
+.footer-buttons {
+  display: none;
+}
+
+/* ... rest of the styles ... */

@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slides.forEach((slide, index) => {
             if (index === currentIndex) {
                 slide.style.display = 'block';
+                slide.style.borderRadius = '7px';
             } else {
                 slide.style.display = 'none';
             }
