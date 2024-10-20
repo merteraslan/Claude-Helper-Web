@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap');
+
+:root {
+    --bg-color: #2e2e2b;
+    --text-color: #f0f0f0;
+    --accent-color: #a05a3c;
+    --container-bg: #393937;
+    --hover-color: #8b4426;
+}
+
 body {
     font-family: "Be Vietnam Pro", sans-serif;
-    line-height: 1.6;
-    color: #f0f0f0;
-    background-color: #2e2e2b;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 h1,
@@ -14,58 +24,100 @@ h3,
 h4,
 h5,
 h6 {
-    color: #a05a3c;
+    color: var(--accent-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 a {
-    color: #a05a3c;
+    color: var(--accent-color);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: var(--hover-color);
     text-decoration: underline;
 }
 
 code {
-    background-color: #393937;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 2px 4px;
     border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 ul,
 ol {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 strong {
-    color: #a05a3c;
+    color: var(--accent-color);
+    font-weight: 600;
 }
 
 .container {
-    background-color: #393937;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: var(--container-bg);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #a05a3c;
-    color: #f0f0f0;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
 }
 
 .button:hover {
-    background-color: #8b4426;
+    background-color: var(--hover-color);
     text-decoration: none;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .container {
+        padding: 20px;
+    }
 }
