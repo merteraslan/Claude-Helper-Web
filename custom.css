@@ -445,44 +445,6 @@ iframe.twitter-follow-button {
     font-weight: 600 !important;
 }
 
-/* Adjust the Buy Me A Coffee button */
-.social-buttons #bmc-wbtn {
-    height: 36px !important;
-    line-height: 36px !important;
-    min-width: 160px !important;
-    padding: 0 10px !important;
-    border-radius: 6px !important;
-    background-color: #FFDD00 !important;
-    color: #000000 !important;
-    font-family: "Cookie", cursive !important;
-    font-size: 18px !important;
-    font-weight: normal !important;
-    text-decoration: none !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-    transition: all 0.3s ease !important;
-    border: 1px solid #000000 !important;
-}
-
-/* Center-align the text and icon within the button */
-.social-buttons #bmc-wbtn .bmc-btn-text,
-.social-buttons #bmc-wbtn .bmc-btn-icon {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* Adjust the coffee icon */
-.social-buttons #bmc-wbtn img {
-    height: 20px !important;
-    width: auto !important;
-    margin-right: 5px !important;
-}
-
-/* Hide the iframe that Twitter creates */
-iframe.twitter-follow-button {
-    display: none !important;
-}
-
 /* Add hover effect for Buy Me A Coffee button */
 .social-buttons #bmc-wbtn:hover {
     background-color: #FFDD00 !important;
@@ -493,4 +455,21 @@ iframe.twitter-follow-button {
 /* Ensure the coffee icon doesn't change on hover */
 .social-buttons #bmc-wbtn:hover img {
     filter: none !important;
+}
+
+/* Add these new styles for the Buy Me A Coffee button */
+.social-buttons .bmc-button {
+    height: 36px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    border-radius: 6px !important;
+}
+
+.social-buttons .bmc-button img {
+    height: 36px !important;
+    width: auto !important;
+    object-fit: cover !important;
 }
