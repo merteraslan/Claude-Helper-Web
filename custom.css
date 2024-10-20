@@ -393,36 +393,45 @@ iframe.twitter-follow-button {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 5px; /* Reduced from 10px */
+  margin-top: 10px; /* Reduced from 15px */
+  margin-bottom: 10px; /* Added to reduce bottom margin */
 }
 
 .social-buttons > * {
   width: 100% !important;
-}
-
-/* Adjust the size of the Buy Me A Coffee button */
-.social-buttons #bmc-wbtn {
-    height: 36px !important;
-    line-height: 36px !important;
-    min-width: 0 !important;
-    padding: 0 10px !important;
-    width: 100% !important;
-    font-size: 14px !important;
-    border-radius: 6px !important;
+  height: 36px !important; /* Ensure consistent height */
 }
 
 /* Adjust the Twitter button */
 .social-buttons .twitter-follow-button {
-    max-width: none !important;
-    height: 36px !important;
-    border-radius: 6px !important;
-    overflow: hidden;
+  max-width: none !important;
+  height: 36px !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #1DA1F2 !important; /* Twitter blue color */
+  color: white !important;
+  text-decoration: none !important;
+  font-family: "Be Vietnam Pro", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
 }
 
-/* Remove any conflicting styles */
-.footer-buttons {
-    display: none;
+.social-buttons .twitter-follow-button:hover {
+  background-color: #0c85d0 !important; /* Darker shade for hover */
 }
 
-/* ... rest of the styles ... */
+/* Adjust the iframe that Twitter creates */
+iframe.twitter-follow-button {
+  display: none !important; /* Hide the iframe created by Twitter */
+}
+
+/* Adjust the X logo */
+.x-logo {
+  height: 18px !important; /* Increased size to match "Buy Me a Coffee" icon */
+  margin-right: 8px !important;
+  vertical-align: middle !important;
+}
