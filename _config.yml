@@ -6,4 +6,4 @@ plugins:
 show_downloads: false
 github:
   is_project_page: true
-  versions_url: versions.html
+  versions_url: changelog.md
