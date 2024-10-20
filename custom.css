@@ -417,21 +417,21 @@ iframe.twitter-follow-button {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 10px; /* Increased gap for better separation */
+    gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .social-buttons > * {
     width: 100% !important;
-    height: 40px !important; /* Increased height for both buttons */
+    height: 36px !important;
 }
 
 /* Adjust the X (Twitter) button */
 .social-buttons .twitter-follow-button {
     max-width: none !important;
-    height: 40px !important; /* Match the height of the Buy Me A Coffee button */
-    border-radius: 6px !important;
+    height: 36px !important;
+    border-radius: 4px !important;
     overflow: hidden;
     display: flex !important;
     align-items: center !important;
@@ -446,17 +446,17 @@ iframe.twitter-follow-button {
 
 /* Adjust the Buy Me A Coffee button */
 .social-buttons .bmc-button {
-    height: 40px !important; /* Match the height of the X button */
+    height: 36px !important;
     width: 100% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     overflow: hidden !important;
-    border-radius: 6px !important;
+    border-radius: 4px !important;
 }
 
 .social-buttons .bmc-button img {
-    height: 40px !important; /* Match the button height */
+    height: 36px !important;
     width: auto !important;
     object-fit: cover !important;
 }
@@ -466,4 +466,11 @@ iframe.twitter-follow-button {
 .social-buttons .bmc-button:hover {
     opacity: 0.9;
     transition: opacity 0.3s ease;
+}
+
+/* Adjust the X logo size */
+.x-logo {
+    height: 14px !important;
+    margin-right: 5px;
+    vertical-align: middle;
 }
