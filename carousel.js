@@ -4,26 +4,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextButton = document.querySelector('.carousel-button.next');
     let currentIndex = 0;
 
-    // Function to load images from the /assets/media folder
+    // Predefined list of images
+    const images = [
+        '/assets/media/1.png',
+        '/assets/media/2.png',
+        '/assets/media/3.png',
+        '/assets/media/4.png',
+        // Add more image paths as needed
+    ];
+
     function loadImages() {
-        fetch('/assets/media')
-            .then(response => response.text())
-            .then(data => {
-                const parser = new DOMParser();
-                const htmlDoc = parser.parseFromString(data, 'text/html');
-                const links = Array.from(htmlDoc.querySelectorAll('a'))
-                    .filter(link => link.href.match(/\.(jpg|jpeg|png|gif)$/i))
-                    .sort((a, b) => a.href.localeCompare(b.href));
+        images.forEach(imagePath => {
+            const img = document.createElement('img');
+            img.src = imagePath;
+            img.alt = `Carousel image ${imagePath.split('/').pop()}`;
+            carouselSlide.appendChild(img);
+        });
 
-                links.forEach(link => {
-                    const img = document.createElement('img');
-                    img.src = link.href;
-                    img.alt = link.textContent;
-                    carouselSlide.appendChild(img);
-                });
-
-                updateCarousel();
-            });
+        updateCarousel();
     }
 
     function updateCarousel() {
