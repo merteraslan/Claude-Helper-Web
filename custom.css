@@ -86,7 +86,8 @@ strong {
 }
 
 .sidebar {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: 20px;
     background-color: var(--container-bg);
     border-radius: 5px;
@@ -386,34 +387,34 @@ iframe.twitter-follow-button {
 /* Update these styles */
 .social-buttons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
   margin-top: 15px;
 }
 
 .social-buttons > * {
-  flex: 1;
-  margin: 0 5px;
+  width: 100% !important;
 }
 
-/* Adjust the size of the Buy Me A Coffee button to match the Twitter button */
+/* Adjust the size of the Buy Me A Coffee button */
 .social-buttons #bmc-wbtn {
-  height: 28px !important;
-  line-height: 28px !important;
-  min-width: 0 !important;
-  padding: 0 10px !important;
-  width: 100% !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    min-width: 0 !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+    font-size: 14px !important;
 }
 
 /* Adjust the Twitter button */
 .social-buttons .twitter-follow-button {
-  width: 100% !important;
-  max-width: none !important;
+    max-width: none !important;
 }
 
-/* Remove the old footer-buttons styles if they're no longer needed */
+/* Remove any conflicting styles */
 .footer-buttons {
-  display: none;
+    display: none;
 }
 
 /* ... rest of the styles ... */
