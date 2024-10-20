@@ -287,11 +287,15 @@ h2 .tag {
     max-width: 100%;
     margin: 0 auto 30px;
     overflow: hidden;
+    background-color: var(--container-bg);
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
 }
 
 .carousel-slide {
     display: flex;
-    width: 100%;
+    width: calc(100% - 40px);  /* Adjust for padding */
     height: 400px;
 }
 
@@ -300,6 +304,7 @@ h2 .tag {
     height: 100%;
     object-fit: cover;
     display: none;
+    border-radius: 4px;  /* Add slight rounding to image corners */
 }
 
 .carousel-button {
