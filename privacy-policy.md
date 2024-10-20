@@ -39,7 +39,9 @@
 
         <p>By using Claude Helper, you agree to the practices described in this Privacy Policy.</p>
 
-        <a href="index.html" class="button">Back to Home</a>
+        <div class="cta-container">
+            <a href="index.html" class="button primary-button">Back to Home</a>
+        </div>
     </div>
 
 </body>
