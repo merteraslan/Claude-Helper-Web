@@ -182,12 +182,14 @@ strong {
 /* Add these new styles for tags */
 .tag {
     display: inline-block;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.8em;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.6em;
     font-weight: bold;
-    margin-right: 8px;
+    margin-right: 6px;
+    vertical-align: middle;
 }
+
 .tag-added { background-color: #28a745; color: white; }
 .tag-changed { background-color: #ffc107; color: black; }
 .tag-deprecated { background-color: #fd7e14; color: white; }
@@ -222,11 +224,25 @@ strong {
 }
 
 .tag-latest {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
 }
 
 .tag-new {
     background-color: #28a745;
     color: white;
+}
+
+/* Update these existing styles */
+.tag-latest {
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+}
+
+/* Add this new style */
+h2 .tag {
+    position: relative;
+    top: -3px;
 }
