@@ -1,3 +1,11 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="custom.css">
+
+<div class="container">
+
 # Claude Helper
 
 Streamline your project knowledge management in Claude AI with the Claude Helper extension!
@@ -25,6 +33,10 @@ Claude Helper adds two intuitive buttons to your Claude AI project page:
 - **Upload Folders**: Click to select and upload entire folders to your project.
 - **Remove All Files**: Quickly clear all uploaded files from your project with a single click.
 
+</div>
+
+<div class="container">
+
 ## Data Usage and Privacy
 
 We take your privacy seriously. Here's what you need to know:
@@ -34,6 +46,10 @@ We take your privacy seriously. Here's what you need to know:
 - **No External Servers**: Your data never leaves the Claude AI platform. The extension communicates exclusively with Claude AI's servers.
 - **No Authentication Required**: The extension works with your existing Claude AI login, requiring no extra credentials.
 - **Temporary File Reading**: During the upload process, files are read temporarily in your browser's memory for transmission to Claude AI. This data is not stored or retained by the extension.
+
+</div>
+
+<div class="container">
 
 ## Important Notes
 
@@ -45,8 +61,14 @@ We take your privacy seriously. Here's what you need to know:
 
 Enhance your Claude AI workflow today with Claude Helper - the efficient solution for managing your project knowledge!
 
+</div>
+
+<div class="container">
+
 ## Feedback
 
-We value your input! Please submit any feedback, suggestions, or issues [here](https://github.com/merteraslan/claudehelper/issues).
+We value your input! Please submit any feedback, suggestions, or issues <a href="https://github.com/merteraslan/claudehelper/issues" class="button">here</a>.
 
-[Privacy Policy](privacy-policy.md)
+<a href="privacy-policy.md" class="button">Privacy Policy</a>
+
+</div>
