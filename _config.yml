@@ -7,3 +7,4 @@ show_downloads: false
 github:
   is_project_page: true
   versions_url: changelog.html
+favicon: assets/images/claudehelper128x128.png
