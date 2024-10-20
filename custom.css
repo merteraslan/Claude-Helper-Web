@@ -246,3 +246,36 @@ h2 .tag {
     position: relative;
     top: -3px;
 }
+
+/* Add these new styles at the end of the file */
+
+.version-container {
+    background-color: rgba(57, 57, 55, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.version-container:not(.current-version) {
+    opacity: 0.7;
+}
+
+.version-container:hover {
+    opacity: 1;
+}
+
+.current-version {
+    background-color: var(--container-bg);
+    border: 1px solid var(--accent-color);
+}
+
+.version-container h2 {
+    margin-top: 0;
+}
+
+.version-container h4 {
+    margin-top: -10px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
