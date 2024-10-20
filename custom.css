@@ -429,9 +429,37 @@ iframe.twitter-follow-button {
   padding: 0 10px !important;
   border-radius: 0 0 6px 6px !important; /* Rounded bottom corners only */
   margin-top: 0 !important; /* Remove any top margin */
+  transition: none !important; /* Remove transition */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Center-align the text and icon within the button */
+.social-buttons #bmc-wbtn .bmc-btn-text,
+.social-buttons #bmc-wbtn .bmc-btn-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Adjust the coffee icon */
+.social-buttons #bmc-wbtn img {
+  margin-right: 5px !important;
 }
 
 /* Hide the iframe that Twitter creates */
 iframe.twitter-follow-button {
   display: none !important;
+}
+
+/* Remove hover effects for Buy Me A Coffee button */
+.social-buttons #bmc-wbtn:hover {
+  background-color: #FFDD00 !important; /* Keep the original background color */
+  color: #000000 !important; /* Keep the original text color */
+}
+
+/* Ensure the coffee icon doesn't change on hover */
+.social-buttons #bmc-wbtn img:hover {
+  filter: none !important;
 }
