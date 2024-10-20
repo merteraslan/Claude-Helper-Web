@@ -36,19 +36,7 @@
                 </ul>
             </div>
 
-            <div class="sidebar">
-                <h2>Claude Helper</h2>
-                <p>Enhance your Claude AI experience with bulk uploads and quick resets</p>
-
-                <h3>View Versions and Patch Notes</h3>
-                <ul>
-                    <li><a href="changelog.html">Changelog</a></li>
-                </ul>
-            </div>
-        </div>
-
         <div class="cta-container">
-            <a href="#" class="button primary-button">Install Claude Helper</a>
             <a href="https://github.com/merteraslan/claudehelper/issues" class="button secondary-button">Provide Feedback</a>
         </div>
 
