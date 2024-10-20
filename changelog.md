@@ -13,7 +13,7 @@ title: Changelog
             <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
             and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 
-            <h2>1.3.0</h2>
+            <h2>1.3.0 <span class="tag tag-latest">Latest</span> <span class="tag tag-new">New</span></h2>
             <h4>2024-08-18</h4>
 
             <h3><span class="tag tag-added">Added</span></h3>

@@ -220,3 +220,13 @@ strong {
     max-width: 100%;
     height: auto;
 }
+
+.tag-latest {
+    background-color: #007bff;
+    color: white;
+}
+
+.tag-new {
+    background-color: #28a745;
+    color: white;
+}
