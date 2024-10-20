@@ -6,6 +6,12 @@
     --accent-color: #a05a3c;
     --container-bg: #393937;
     --hover-color: #8b4426;
+    /* Additional Variables for Social Buttons */
+    --twitter-color: #1DA1F2;
+    --twitter-hover-color: #0d95e8;
+    --bmc-color: #FFDD00;
+    --bmc-hover-color: #e6c800;
+    --bmc-text-color: #000000;
 }
 
 body {
@@ -180,7 +186,7 @@ strong {
     }
 }
 
-/* Add these new styles for tags */
+/* Tag Styles */
 .tag {
     display: inline-block;
     padding: 2px 8px;
@@ -221,8 +227,6 @@ strong {
     color: white;
 }
 
-/* Add these new styles at the end of the file */
-
 .separator {
     margin: 20px 0;
     border: none;
@@ -262,20 +266,10 @@ strong {
     color: white;
 }
 
-/* Update these existing styles */
-.tag-latest {
-    background-color: var(--container-bg);
-    color: var(--text-color);
-    border: 1px solid var(--accent-color);
-}
-
-/* Add this new style */
 h2 .tag {
     position: relative;
     top: -4px;
 }
-
-/* Add these new styles at the end of the file */
 
 .version-container {
     background-color: rgba(57, 57, 55, 0.5);
@@ -308,8 +302,6 @@ h2 .tag {
     opacity: 0.8;
 }
 
-/* Add these styles at the end of the file */
-
 .carousel-container {
     position: relative;
     max-width: 100%;
@@ -317,7 +309,6 @@ h2 .tag {
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid var(--accent-color);
-    /* Add this line */
 }
 
 .carousel-slide {
@@ -358,41 +349,28 @@ h2 .tag {
     right: 10px;
 }
 
-/* Add these styles at the end of the file */
-
+/* Buy Me A Coffee Button Styles */
 .bmc-btn {
-    width: 100% !important;
-    margin-top: 10px !important;
-    height: auto !important;
-    line-height: 36px !important;
-    border-radius: 6px !important;
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    line-height: 36px;
+    border-radius: 6px;
 }
 
 .bmc-btn-text {
-    font-family: "Be Vietnam Pro", sans-serif !important;
-    font-size: 14px !important;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
 }
 
+/* X (Twitter) Logo Styles */
 .x-logo {
-    height: 1em;
+    height: 14px;
     margin-right: 5px;
     vertical-align: middle;
 }
 
-/* Add these styles at the end of the file */
-
-.twitter-follow-button {
-    margin-bottom: 10px !important;
-}
-
-/* Adjust the iframe that Twitter creates */
-iframe.twitter-follow-button {
-    width: 100% !important;
-    max-width: none !important;
-}
-
-/* Existing styles... */
-
+/* Footer Buttons */
 .footer-buttons {
     display: flex;
     justify-content: space-between;
@@ -406,71 +384,80 @@ iframe.twitter-follow-button {
 
 /* Adjust the size of the Buy Me A Coffee button to match the Twitter button */
 .footer-buttons #bmc-wbtn {
-    height: 28px !important;
-    line-height: 28px !important;
-    min-width: 160px !important;
-    padding: 0 10px !important;
+    height: 28px;
+    line-height: 28px;
+    min-width: 160px;
+    padding: 0 10px;
 }
 
-/* Update these styles */
+/* Social Buttons Container */
 .social-buttons {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-.social-buttons > * {
-    width: 100% !important;
-    height: 36px !important;
+/* Social Button Base Styles */
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    height: 36px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    background-color: var(--twitter-color);
+    /* Default to Twitter color */
+    color: #ffffff;
+    /* Default text color */
 }
 
-/* Adjust the X (Twitter) button */
+/* Twitter (X) Button Styles */
 .social-buttons .twitter-follow-button {
-    max-width: none !important;
-    height: 36px !important;
-    border-radius: 4px !important;
-    overflow: hidden;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background-color: black !important;
-    color: white !important;
-    text-decoration: none !important;
-    font-family: "Be Vietnam Pro", sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
+    background-color: var(--twitter-color);
+    color: #ffffff;
 }
 
-/* Adjust the Buy Me A Coffee button */
-.social-buttons .bmc-button {
-    height: 36px !important;
-    width: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    overflow: hidden !important;
-    border-radius: 4px !important;
-}
-
-.social-buttons .bmc-button img {
-    height: 36px !important;
-    width: auto !important;
-    object-fit: cover !important;
-}
-
-/* Add hover effect for both buttons */
-.social-buttons .twitter-follow-button:hover,
-.social-buttons .bmc-button:hover {
+.social-buttons .twitter-follow-button:hover {
+    background-color: var(--twitter-hover-color);
     opacity: 0.9;
-    transition: opacity 0.3s ease;
 }
 
-/* Adjust the X logo size */
-.x-logo {
-    height: 14px !important;
-    margin-right: 5px;
+/* Buy Me A Coffee Button Styles */
+.social-buttons .bmc-button {
+    background-color: var(--bmc-color);
+    color: var(--bmc-text-color);
+}
+
+.social-buttons .bmc-button:hover {
+    background-color: var(--bmc-hover-color);
+    opacity: 0.9;
+}
+
+/* Icons within Buttons */
+.social-buttons img.x-logo,
+.social-buttons img.bmc-logo {
+    height: 20px;
+    width: auto;
+    margin-right: 8px;
+    display: inline-block;
     vertical-align: middle;
+}
+
+/* Responsive Layout: Side by Side on Larger Screens */
+@media (min-width: 600px) {
+    .social-buttons {
+        flex-direction: row;
+    }
+
+    .social-buttons a {
+        flex: 1;
+        justify-content: center;
+    }
 }
