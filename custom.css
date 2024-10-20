@@ -342,3 +342,9 @@ h2 .tag {
     font-family: "Be Vietnam Pro", sans-serif !important;
     font-size: 14px !important;
 }
+
+.x-logo {
+  height: 1em;
+  margin-right: 5px;
+  vertical-align: middle;
+}
