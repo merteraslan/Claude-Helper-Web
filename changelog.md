@@ -1,8 +1,13 @@
+---
+layout: default
+title: Changelog
+---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog - Claude Helper</title>
+    <title>Claude Helper - Changelog</title>
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>

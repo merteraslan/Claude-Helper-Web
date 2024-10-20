@@ -1,8 +1,13 @@
+---
+layout: default
+title: Privacy Policy
+---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Claude Helper</title>
+    <title>Claude Helper - Privacy Policy</title>
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
@@ -39,9 +44,7 @@
 
         <p>By using Claude Helper, you agree to the practices described in this Privacy Policy.</p>
 
-        <div class="cta-container">
-            <a href="index.html" class="button primary-button">Back to Home</a>
-        </div>
+        <a href="index.html" class="button">Back to Home</a>
     </div>
 
 </body>
