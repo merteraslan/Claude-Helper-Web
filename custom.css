@@ -182,11 +182,11 @@ strong {
 /* Add these new styles for tags */
 .tag {
     display: inline-block;
-    padding: 1px 6px;
-    border-radius: 3px;
-    font-size: 0.6em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
     font-weight: bold;
-    margin-right: 6px;
+    margin-right: 8px;
     vertical-align: middle;
 }
 
@@ -244,7 +244,7 @@ strong {
 /* Add this new style */
 h2 .tag {
     position: relative;
-    top: -3px;
+    top: -4px;
 }
 
 /* Add these new styles at the end of the file */
