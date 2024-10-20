@@ -1,19 +1,22 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap');
 
+/* CSS Variables for Consistent Theming */
 :root {
     --bg-color: #2e2e2b;
     --text-color: #f0f0f0;
     --accent-color: #a05a3c;
     --container-bg: #393937;
-    --hover-color: #8b4426;
+    --hover-color: #040403;
     /* Additional Variables for Social Buttons */
-    --twitter-color: #1DA1F2;
-    --twitter-hover-color: #0d95e8;
+    --twitter-color: #000000;
+    --twitter-hover-color: #393937;
     --bmc-color: #FFDD00;
     --bmc-hover-color: #e6c800;
     --bmc-text-color: #000000;
 }
 
+/* Global Styles */
 body {
     font-family: "Be Vietnam Pro", sans-serif;
     line-height: 1.8;
@@ -150,6 +153,7 @@ strong {
     margin-bottom: 30px;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -271,6 +275,7 @@ h2 .tag {
     top: -4px;
 }
 
+/* Version Container Styles */
 .version-container {
     background-color: rgba(57, 57, 55, 0.5);
     border-radius: 8px;
@@ -302,6 +307,7 @@ h2 .tag {
     opacity: 0.8;
 }
 
+/* Carousel Styles */
 .carousel-container {
     position: relative;
     max-width: 100%;
@@ -349,27 +355,6 @@ h2 .tag {
     right: 10px;
 }
 
-/* Buy Me A Coffee Button Styles */
-.bmc-btn {
-    width: 100%;
-    margin-top: 10px;
-    height: auto;
-    line-height: 36px;
-    border-radius: 6px;
-}
-
-.bmc-btn-text {
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 14px;
-}
-
-/* X (Twitter) Logo Styles */
-.x-logo {
-    height: 14px;
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
 /* Footer Buttons */
 .footer-buttons {
     display: flex;
@@ -382,8 +367,7 @@ h2 .tag {
     margin: 0 5px;
 }
 
-/* Adjust the size of the Buy Me A Coffee button to match the Twitter button */
-.footer-buttons #bmc-wbtn {
+#bmc-wbtn {
     height: 28px;
     line-height: 28px;
     min-width: 160px;
@@ -412,10 +396,6 @@ h2 .tag {
     font-size: 14px;
     font-weight: 600;
     transition: background-color 0.3s ease, opacity 0.3s ease;
-    background-color: var(--twitter-color);
-    /* Default to Twitter color */
-    color: #ffffff;
-    /* Default text color */
 }
 
 /* Twitter (X) Button Styles */
@@ -433,6 +413,10 @@ h2 .tag {
 .social-buttons .bmc-button {
     background-color: var(--bmc-color);
     color: var(--bmc-text-color);
+    display: flex;
+    /* Ensure flex layout for alignment */
+    align-items: center;
+    justify-content: center;
 }
 
 .social-buttons .bmc-button:hover {
@@ -440,9 +424,9 @@ h2 .tag {
     opacity: 0.9;
 }
 
-/* Icons within Buttons */
-.social-buttons img.x-logo,
-.social-buttons img.bmc-logo {
+/* Logos within Buttons */
+.social-buttons .x-logo,
+.social-buttons .bmc-logo {
     height: 20px;
     width: auto;
     margin-right: 8px;
@@ -460,4 +444,12 @@ h2 .tag {
         flex: 1;
         justify-content: center;
     }
+}
+
+/* Ensure SVGs are Properly Aligned */
+.social-buttons a svg.bmc-logo,
+.social-buttons a img.bmc-logo,
+.social-buttons a img.x-logo {
+    display: inline-block;
+    vertical-align: middle;
 }
