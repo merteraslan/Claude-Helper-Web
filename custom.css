@@ -178,3 +178,19 @@ strong {
         padding: 20px 15px;
     }
 }
+
+/* Add these new styles for tags */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.tag-added { background-color: #28a745; color: white; }
+.tag-changed { background-color: #ffc107; color: black; }
+.tag-deprecated { background-color: #fd7e14; color: white; }
+.tag-removed { background-color: #dc3545; color: white; }
+.tag-fixed { background-color: #17a2b8; color: white; }
+.tag-security { background-color: #6610f2; color: white; }

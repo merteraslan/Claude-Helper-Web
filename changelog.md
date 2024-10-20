@@ -3,50 +3,44 @@ layout: default
 title: Changelog
 ---
 
-# Changelog
+<div class="wrapper">
+    <h1>Changelog</h1>
 
-All notable changes to the Claude Helper extension will be documented in this file.
+    <p>All notable changes to the Claude Helper extension will be documented in this file.</p>
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+    <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+    and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 
-## [Unreleased]
+    <h2>Unreleased</h2>
 
-No upcoming changes currently planned.
+    <p>No upcoming changes currently planned.</p>
 
-## [1.3.0] - 2024-08-18
+    <h2>1.3.0 - 2024-08-18</h2>
 
-### <span class="tag tag-added">Added</span>
+    <h3><span class="tag tag-added">Added</span></h3>
+    <ul>
+        <li>Automatic detection and skipping of image files during upload process.</li>
+        <li>Comprehensive upload summary message including:
+            <ul>
+                <li>Number of successfully uploaded files</li>
+                <li>Number of skipped image files</li>
+                <li>Number of failed uploads (if any)</li>
+            </ul>
+        </li>
+    </ul>
 
-- Automatic detection and skipping of image files during upload process.
-- Comprehensive upload summary message including:
-  - Number of successfully uploaded files
-  - Number of skipped image files
-  - Number of failed uploads (if any)
+    <h3><span class="tag tag-changed">Changed</span></h3>
+    <ul>
+        <li>Implemented a 5-second delay before page refresh to ensure visibility of the upload summary.</li>
+        <li>Page now only refreshes if at least one file was successfully uploaded.</li>
+        <li>Consolidated various status messages into a single, comprehensive upload summary.</li>
+    </ul>
 
-### <span class="tag tag-changed">Changed</span>
+    <h3><span class="tag tag-fixed">Fixed</span></h3>
+    <ul>
+        <li>Resolved an issue where users couldn't see the upload summary due to rapid page refresh.</li>
+    </ul>
 
-- Implemented a 5-second delay before page refresh to ensure visibility of the upload summary.
-- Page now only refreshes if at least one file was successfully uploaded.
-- Consolidated various status messages into a single, comprehensive upload summary.
+    <a href="index.html" class="button">Back to Home</a>
 
-### <span class="tag tag-fixed">Fixed</span>
-
-- Resolved an issue where users couldn't see the upload summary due to rapid page refresh.
-
-<style>
-    .tag {
-        display: inline-block;
-        padding: 2px 8px;
-        border-radius: 4px;
-        font-size: 0.8em;
-        font-weight: bold;
-        margin-right: 8px;
-    }
-    .tag-added { background-color: #28a745; color: white; }
-    .tag-changed { background-color: #ffc107; color: black; }
-    .tag-deprecated { background-color: #fd7e14; color: white; }
-    .tag-removed { background-color: #dc3545; color: white; }
-    .tag-fixed { background-color: #17a2b8; color: white; }
-    .tag-security { background-color: #6610f2; color: white; }
-</style>
+</div>
