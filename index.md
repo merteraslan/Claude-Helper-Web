@@ -12,6 +12,15 @@ layout: default
 <body>
     <div class="container">
         <div class="main-content">
+                        <!-- Add the carousel here -->
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <!-- Images will be dynamically added here -->
+                </div>
+                <button class="carousel-button prev">&lt;</button>
+                <button class="carousel-button next">&gt;</button>
+            </div>
+            
             <h1>Claude Helper</h1>
             <p>Enhance your Claude AI experience with bulk uploads and quick resets</p>
 
@@ -39,6 +48,9 @@ layout: default
             </ul>
         </div>
     </div>
+
+    <!-- Add this script tag at the end of the body -->
+    <script src="carousel.js"></script>
 
 </body>
 </html>
