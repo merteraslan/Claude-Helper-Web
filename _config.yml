@@ -7,3 +7,12 @@ show_downloads: false
 github:
   is_project_page: true
   versions_url: versions.html
+
+versions:
+  - number: 1.3.0
+    tag: NEW
+  - number: 1.2.0
+  - number: 1.1.0
+  - number: 1.0.0
+
+changelog_url: changelog.html
