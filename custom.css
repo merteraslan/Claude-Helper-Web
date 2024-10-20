@@ -336,27 +336,6 @@ h2 .tag {
 
 /* Add these styles at the end of the file */
 
-.bmc-btn {
-    width: 100% !important;
-    margin-top: 10px !important;
-    height: auto !important;
-    line-height: 36px !important;
-    border-radius: 6px !important;
-}
-
-.bmc-btn-text {
-    font-family: "Be Vietnam Pro", sans-serif !important;
-    font-size: 14px !important;
-}
-
-.x-logo {
-  height: 1em;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-/* Add these styles at the end of the file */
-
 .twitter-follow-button {
     margin-bottom: 10px !important;
 }
@@ -369,31 +348,11 @@ iframe.twitter-follow-button {
 
 /* Existing styles... */
 
-.footer-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.footer-buttons > * {
-  margin: 0 5px;
-}
-
-/* Adjust the size of the Buy Me A Coffee button to match the Twitter button */
-.footer-buttons #bmc-wbtn {
-  height: 28px !important;
-  line-height: 28px !important;
-  min-width: 160px !important;
-  padding: 0 10px !important;
-}
-
-/* Update these styles */
 .social-buttons {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 1px; /* Add a small gap between buttons */
+  gap: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
