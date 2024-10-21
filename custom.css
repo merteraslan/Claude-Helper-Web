@@ -121,7 +121,7 @@ strong {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, filter 0.1s ease; /* Added filter transition */
     text-align: center;
 }
 
@@ -129,6 +129,7 @@ strong {
     background-color: var(--hover-color);
     color: var(--text-color);
     text-decoration: none;
+    filter: brightness(0.9); /* Darkens the button slightly on hover */
 }
 
 .primary-button {
