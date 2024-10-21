@@ -14,7 +14,47 @@ title: Changelog
             and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 
             <div class="version-container current-version">
-                <h2>1.3.0 <span class="tag tag-latest">Latest</span> <span class="tag tag-new">New</span></h2>
+                <h2>1.4.0 <span class="tag tag-latest">Latest</span> <span class="tag tag-new">New</span></h2>
+                <h4>2023-10-21</h4>
+
+                <h3><span class="tag tag-added">Added</span></h3>
+                <ul>
+                    <li>Minimap feature for chat pages, providing an overview of long conversations
+                        <ul>
+                            <li>Drag and drop functionality to move the viewport</li>
+                            <li>Click-to-jump navigation within the minimap</li>
+                        </ul>
+                    </li>
+                    <li>New options window accessible via the "Claude Helper" button in the toolbar</li>
+                    <li>File exclusion settings based on file extension or regex pattern</li>
+                    <li>Version control for file uploads using file hashing</li>
+                    <li>Option to skip unchanged files or add them with an appended date</li>
+                    <li>Settings export feature to save configurations as JSON files</li>
+                    <li>Settings import feature to load configurations from JSON files</li>
+                    <li>Toggle button for the minimap feature</li>
+                    <li>Confirmation dialogues for important actions</li>
+                    <li>Two-click access to start a new Claude conversation from any website</li>
+                </ul>
+
+                <h3><span class="tag tag-changed">Changed</span></h3>
+                <ul>
+                    <li>Improved UI for loading animations</li>
+                    <li>Enhanced project page hosted on GitHub Pages</li>
+                    <li>Options page now disables outside of claude.ai websites
+                        <ul>
+                            <li>Provides buttons for more information and quick access to claude.ai/new</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3><span class="tag tag-security">Security</span></h3>
+                <ul>
+                    <li>Added two new permissions: "storage" for saving settings and "downloads" for exporting configurations</li>
+                </ul>
+            </div>
+
+            <div class="version-container">
+                <h2>1.3.0</h2>
                 <h4>2024-08-18</h4>
 
                 <h3><span class="tag tag-added">Added</span></h3>
