@@ -15,7 +15,7 @@ title: Changelog
 
             <div class="version-container current-version">
                 <h2>1.4.0 <span class="tag tag-latest">Latest</span> <span class="tag tag-new">New</span></h2>
-                <h4>2023-10-21</h4>
+                <h4>2024-10-21</h4>
 
                 <h3><span class="tag tag-added">Added</span></h3>
                 <ul>
