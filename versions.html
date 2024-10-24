@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Helper - Versions and Patch Notes</title>
+    <link rel="stylesheet" href="custom.css">
+    <style>
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .tag-added { background-color: #28a745; color: white; }
+        .tag-changed { background-color: #ffc107; color: black; }
+        .tag-deprecated { background-color: #fd7e14; color: white; }
+        .tag-removed { background-color: #dc3545; color: white; }
+        .tag-fixed { background-color: #17a2b8; color: white; }
+        .tag-security { background-color: #6610f2; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Claude Helper - Versions and Patch Notes</h1>
+        <p>Here you can find the version history and patch notes for Claude Helper.</p>
+        <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>, and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+
+        <h2 id="unreleased">Unreleased</h2>
+        <p>No upcoming changes currently planned.</p>
+
+        <h2 id="1.3.0">Version 1.3.0</h2>
+        <p><strong>Release Date:</strong> 2024-08-18</p>
+        <h3><span class="tag tag-added">Added</span></h3>
+        <ul>
+            <li>Automatic detection and skipping of image files during upload process.</li>
+            <li>Comprehensive upload summary message including:
+                <ul>
+                    <li>Number of successfully uploaded files</li>
+                    <li>Number of skipped image files</li>
+                    <li>Number of failed uploads (if any)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3><span class="tag tag-changed">Changed</span></h3>
+        <ul>
+            <li>Implemented a 5-second delay before page refresh to ensure visibility of the upload summary.</li>
+            <li>Page now only refreshes if at least one file was successfully uploaded.</li>
+            <li>Consolidated various status messages into a single, comprehensive upload summary.</li>
+        </ul>
+
+        <h3><span class="tag tag-fixed">Fixed</span></h3>
+        <ul>
+            <li>Resolved an issue where users couldn't see the upload summary due to rapid page refresh.</li>
+        </ul>
+
+        <!-- Add more versions as needed -->
+
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

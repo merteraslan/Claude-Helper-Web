@@ -1,0 +1,457 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap');
+
+/* CSS Variables for Consistent Theming */
+:root {
+    --bg-color: #2e2e2b;
+    --text-color: #f0f0f0;
+    --accent-color: #a05a3c;
+    --container-bg: #393937;
+    --hover-color: #a05a3c;
+    /* Additional Variables for Social Buttons */
+    --twitter-color: #000000;
+    --twitter-hover-color: #282828;
+    --bmc-color: #FFDD00;
+    --bmc-hover-color: #c9ae00;
+    --bmc-text-color: #000000;
+}
+
+/* Global Styles */
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--accent-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sidebar {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: var(--container-bg);
+    border-radius: 5px;
+}
+
+.cta-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, filter 0.1s ease; /* Added filter transition */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    text-decoration: none;
+    filter: brightness(0.9); /* Darkens the button slightly on hover */
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+}
+
+.secondary-button {
+    background-color: var(--container-bg);
+    border: 1px solid var(--accent-color);
+}
+
+.new-tag {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 0.8em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .cta-container {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .wrapper {
+        padding: 20px 15px;
+    }
+}
+
+/* Tag Styles */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.tag-added {
+    background-color: #28a745;
+    color: white;
+}
+
+.tag-changed {
+    background-color: #ffc107;
+    color: black;
+}
+
+.tag-deprecated {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.tag-removed {
+    background-color: #dc3545;
+    color: white;
+}
+
+.tag-fixed {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.tag-security {
+    background-color: #6610f2;
+    color: white;
+}
+
+.separator {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid var(--accent-color);
+}
+
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.sidebar-buttons .button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.store-badge {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.tag-latest {
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+}
+
+.tag-new {
+    background-color: #28a745;
+    color: white;
+}
+
+h2 .tag {
+    position: relative;
+    top: -4px;
+}
+
+/* Version Container Styles */
+.version-container {
+    background-color: rgba(57, 57, 55, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.version-container:not(.current-version) {
+    opacity: 0.7;
+}
+
+.version-container:hover {
+    opacity: 1;
+}
+
+.current-version {
+    background-color: var(--container-bg);
+    border: 1px solid var(--accent-color);
+}
+
+.version-container h2 {
+    margin-top: 0;
+}
+
+.version-container h4 {
+    margin-top: -10px;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--accent-color);
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Footer Buttons */
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-buttons>* {
+    margin: 0 5px;
+}
+
+#bmc-wbtn {
+    height: 28px;
+    line-height: 28px;
+    min-width: 160px;
+    padding: 0 10px;
+}
+
+/* Social Buttons Container */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Social Button Base Styles */
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    height: 36px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Twitter (X) Button Styles */
+.social-buttons .twitter-follow-button {
+    background-color: var(--twitter-color);
+    color: #ffffff;
+}
+
+.social-buttons .twitter-follow-button:hover {
+    background-color: var(--twitter-hover-color);
+    opacity: 0.9;
+}
+
+/* Buy Me A Coffee Button Styles */
+.social-buttons .bmc-button {
+    background-color: var(--bmc-color);
+    color: var(--bmc-text-color);
+    display: flex;
+    /* Ensure flex layout for alignment */
+    align-items: center;
+    justify-content: center;
+}
+
+.social-buttons .bmc-button:hover {
+    background-color: var(--bmc-hover-color);
+    opacity: 0.9;
+}
+
+/* Logos within Buttons */
+.social-buttons .x-logo,
+.social-buttons .bmc-logo {
+    height: 20px;
+    width: auto;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Responsive Layout: Side by Side on Larger Screens */
+@media (min-width: 600px) {
+    .social-buttons {
+        flex-direction: row;
+    }
+
+    .social-buttons a {
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+/* Ensure SVGs are Properly Aligned */
+.social-buttons a svg.bmc-logo,
+.social-buttons a img.bmc-logo,
+.social-buttons a img.x-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
