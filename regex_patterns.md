@@ -24,55 +24,59 @@ title: Regex Pattern Guide
             </div>
 
             <h2>Common Use Cases and Patterns</h2>
-            node_modules # Excludes node_modules folder and its contents
+
+            <h3>1. Exclude Common Directories</h3>
+            <pre><code>node_modules/     # Excludes node_modules folder and its contents
 
 \.git # Excludes .git folder and its contents
 dist # Excludes dist folder and its contents
 build # Excludes build folder and its contents
-coverage # Excludes coverage folder and its contents
+coverage # Excludes coverage folder and its contents</code></pre>
 
-### 2. Exclude Configuration Files
+            <h3>2. Exclude Configuration Files</h3>
+            <pre><code>package-lock\.json$      # Excludes package-lock.json
 
-package-lock\.json$ # Excludes package-lock.json
 \.env$ # Excludes .env files
-\.config\.(js|ts)$ # Excludes .config.js and .config.ts files
+\.config\.(js|ts)$ # Excludes .config.js and .config.ts files</code></pre>
 
-### 3. Exclude Build/Compiled Files
+            <h3>3. Exclude Build/Compiled Files</h3>
+            <pre><code>\.min\.js$              # Excludes minified JavaScript files
 
-\.min\.js$ # Excludes minified JavaScript files
-\.(map|bundle)\.js$ # Excludes source maps and bundled files
+\.(map|bundle)\.js$ # Excludes source maps and bundled files</code></pre>
 
-### 4. Exclude Temporary and System Files
+            <h3>4. Exclude Temporary and System Files</h3>
+            <pre><code>\.DS_Store$     # Excludes macOS system files
 
-\.DS_Store$ # Excludes macOS system files
 desktop\.ini$ # Excludes Windows system files
 \.tmp$ # Excludes temporary files
-~$ # Excludes backup files (ending with ~)
+~$ # Excludes backup files (ending with ~)</code></pre>
 
-## Pattern Matching Rules
+            <h2>Pattern Matching Rules</h2>
 
-### Basic Rules
+            <h3>Basic Rules</h3>
+            <ul>
+                <li>Patterns are case-sensitive</li>
+                <li>Patterns match anywhere in the path unless anchored</li>
+                <li>Use <code>^</code> to match the start of the path</li>
+                <li>Use <code>$</code> to match the end of the path</li>
+            </ul>
 
-- Patterns are case-sensitive
-- Patterns match anywhere in the path unless anchored
-- Use `^` to match the start of the path
-- Use `$` to match the end of the path
+            <h3>Special Characters</h3>
+            <ul>
+                <li><code>.</code> matches any character (use <code>\.</code> to match a literal dot)</li>
+                <li><code>*</code> matches zero or more characters</li>
+                <li><code>?</code> matches exactly one character</li>
+                <li><code>|</code> means OR (e.g., <code>(js|ts)</code> matches "js" or "ts")</li>
+                <li><code>^</code> matches the start of the path</li>
+                <li><code>$</code> matches the end of the path</li>
+            </ul>
 
-### Special Characters
+            <h3>Examples with Explanations</h3>
+            <pre><code>^test/          # Matches paths starting with "test/"
 
-- `.` matches any character (use `\.` to match a literal dot)
-- `*` matches zero or more characters
-- `?` matches exactly one character
-- `|` means OR (e.g., `(js|ts)` matches "js" or "ts")
-- `^` matches the start of the path
-- `$` matches the end of the path
-
-### Examples with Explanations
-
-^test/ # Matches paths starting with "test/"
 \.test\.js$ # Matches files ending with .test.js
 (spec|test)\.js # Matches both spec.js and test.js files
-^\.. # Matches any hidden file/folder (starting with .)
+^\.. # Matches any hidden file/folder (starting with .)</code></pre>
 
             <a href="index.html" class="button">Back to Home</a>
         </div>
