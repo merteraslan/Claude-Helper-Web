@@ -29,14 +29,18 @@ title: Regex Pattern Guide
             <pre><code>node_modules/     # Excludes node_modules folder and its contents
 
 \.git # Excludes .git folder and its contents
+
 dist # Excludes dist folder and its contents
+
 build # Excludes build folder and its contents
+
 coverage # Excludes coverage folder and its contents</code></pre>
 
             <h3>2. Exclude Configuration Files</h3>
             <pre><code>package-lock\.json$      # Excludes package-lock.json
 
 \.env$ # Excludes .env files
+
 \.config\.(js|ts)$ # Excludes .config.js and .config.ts files</code></pre>
 
             <h3>3. Exclude Build/Compiled Files</h3>
@@ -48,7 +52,9 @@ coverage # Excludes coverage folder and its contents</code></pre>
             <pre><code>\.DS_Store$     # Excludes macOS system files
 
 desktop\.ini$ # Excludes Windows system files
+
 \.tmp$ # Excludes temporary files
+
 ~$ # Excludes backup files (ending with ~)</code></pre>
 
             <h2>Pattern Matching Rules</h2>
@@ -75,7 +81,9 @@ desktop\.ini$ # Excludes Windows system files
             <pre><code>^test/          # Matches paths starting with "test/"
 
 \.test\.js$ # Matches files ending with .test.js
+
 (spec|test)\.js # Matches both spec.js and test.js files
+
 ^\.. # Matches any hidden file/folder (starting with .)</code></pre>
 
             <a href="index.html" class="button">Back to Home</a>
