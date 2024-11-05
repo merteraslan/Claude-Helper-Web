@@ -14,7 +14,30 @@ title: Changelog
             and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 
             <div class="version-container current-version">
-                <h2>1.4.0 <span class="tag tag-latest">Latest</span> <span class="tag tag-new">New</span></h2>
+                <h2>1.4.1 <span class="tag tag-latest">Latest</span> <span class="tag tag-new">New</span></h2>
+                <h4>2024-10-25</h4>
+
+                <h3><span class="tag tag-changed">Changed</span></h3>
+                <ul>
+                    <li>Modified regex pattern matching to check against full file paths instead of just filenames</li>
+                    <li>Simplified regex pattern requirements for better usability</li>
+                </ul>
+
+                <h3><span class="tag tag-added">Added</span></h3>
+                <ul>
+                    <li>Improved logging for regex pattern matching</li>
+                    <li>Enhanced UI for regex pattern input:
+                        <ul>
+                            <li>Added clearer placeholder text explaining one-pattern-per-line requirement</li>
+                            <li>Adjusted textarea height to prevent scrolling of placeholder text</li>
+                            <li>Updated tooltip with more detailed pattern examples</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="version-container">
+                <h2>1.4.0</h2>
                 <h4>2024-10-21</h4>
 
                 <h3><span class="tag tag-added">Added</span></h3>
@@ -135,6 +158,13 @@ title: Changelog
                 <h3><span class="tag tag-added">Added</span></h3>
                 <ul>
                     <li>Core functionality for uploading folders to Claude.</li>
+                </ul>
+            </div>
+
+            <div class="documentation-links">
+                <p>Additional Documentation:</p>
+                <ul>
+                    <li><a href="regex_patterns.html">Regex Pattern Guide</a> - Learn how to use regex patterns for file exclusion</li>
                 </ul>
             </div>
 
