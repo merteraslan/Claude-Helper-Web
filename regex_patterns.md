@@ -24,7 +24,55 @@ title: Regex Pattern Guide
             </div>
 
             <h2>Common Use Cases and Patterns</h2>
-            <!-- Add your pattern examples here -->
+            node_modules # Excludes node_modules folder and its contents
+
+\.git # Excludes .git folder and its contents
+dist # Excludes dist folder and its contents
+build # Excludes build folder and its contents
+coverage # Excludes coverage folder and its contents
+
+### 2. Exclude Configuration Files
+
+package-lock\.json$ # Excludes package-lock.json
+\.env$ # Excludes .env files
+\.config\.(js|ts)$ # Excludes .config.js and .config.ts files
+
+### 3. Exclude Build/Compiled Files
+
+\.min\.js$ # Excludes minified JavaScript files
+\.(map|bundle)\.js$ # Excludes source maps and bundled files
+
+### 4. Exclude Temporary and System Files
+
+\.DS_Store$ # Excludes macOS system files
+desktop\.ini$ # Excludes Windows system files
+\.tmp$ # Excludes temporary files
+~$ # Excludes backup files (ending with ~)
+
+## Pattern Matching Rules
+
+### Basic Rules
+
+- Patterns are case-sensitive
+- Patterns match anywhere in the path unless anchored
+- Use `^` to match the start of the path
+- Use `$` to match the end of the path
+
+### Special Characters
+
+- `.` matches any character (use `\.` to match a literal dot)
+- `*` matches zero or more characters
+- `?` matches exactly one character
+- `|` means OR (e.g., `(js|ts)` matches "js" or "ts")
+- `^` matches the start of the path
+- `$` matches the end of the path
+
+### Examples with Explanations
+
+^test/ # Matches paths starting with "test/"
+\.test\.js$ # Matches files ending with .test.js
+(spec|test)\.js # Matches both spec.js and test.js files
+^\.. # Matches any hidden file/folder (starting with .)
 
             <a href="index.html" class="button">Back to Home</a>
         </div>
