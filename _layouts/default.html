@@ -27,6 +27,22 @@
     {% include head-custom.html %}
     <link rel="icon" type="image/png" href="{{ site.favicon }}">
     <meta name="google-site-verification" content="79B-PqCW8jeJvQr6HPRIgfH3YKkSECb6Iz9kdc0zmlo" />
+    <style>
+        code {
+            color: #f8f8f8 !important;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        pre code {
+            color: #f8f8f8 !important;
+            display: block;
+            padding: 1em;
+            overflow-x: auto;
+        }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -83,6 +99,11 @@
       <section>
 
       {{ content }}
+      <style>
+        footer {
+          margin-top: 20px;
+        }
+      </style>
 
       </section>
       <footer>

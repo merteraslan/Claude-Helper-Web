@@ -16,10 +16,22 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     function loadImages() {
+        // Set inline styles for the carousel container
+        carouselSlide.style.position = 'relative';
+        carouselSlide.style.width = '100%';
+        carouselSlide.style.paddingTop = '62.5%'; // 800/1280 = 0.625 (maintains 1280x800 aspect ratio)
+
         images.forEach(imagePath => {
             const img = document.createElement('img');
             img.src = imagePath;
             img.alt = `Carousel image ${imagePath.split('/').pop()}`;
+            // Set inline styles for the images
+            img.style.position = 'absolute';
+            img.style.top = '0';
+            img.style.left = '0';
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'contain';
             carouselSlide.appendChild(img);
         });
 

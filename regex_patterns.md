@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Regex Pattern Guide
+markdown: kramdown
 ---
 
 <div class="wrapper">
