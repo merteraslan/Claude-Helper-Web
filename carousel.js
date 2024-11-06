@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set inline styles for the carousel container
         carouselSlide.style.position = 'relative';
         carouselSlide.style.width = '100%';
-        carouselSlide.style.paddingTop = '62.5%'; // 800/1280 = 0.625 (maintains 1280x800 aspect ratio)
+        carouselSlide.style.maxWidth = '800px'; // Add max-width constraint
+        carouselSlide.style.margin = '0 auto'; // Center the carousel
+        carouselSlide.style.paddingTop = '62.5%'; // 10/16 = 0.625 (maintains 16:10 aspect ratio)
 
         images.forEach(imagePath => {
             const img = document.createElement('img');
