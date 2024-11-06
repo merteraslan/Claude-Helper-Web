@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadImages() {
         // Set inline styles for the carousel container
         carouselSlide.style.position = 'relative';
-        carouselSlide.style.width = '100%';
-        carouselSlide.style.maxWidth = '800px'; // Add max-width constraint
-        carouselSlide.style.margin = '0 auto'; // Center the carousel
-        carouselSlide.style.paddingTop = '62.5%'; // 10/16 = 0.625 (maintains 16:10 aspect ratio)
+        carouselSlide.style.width = '400px';
+        carouselSlide.style.maxWidth = '100%';
+        carouselSlide.style.margin = '0 auto';
+        carouselSlide.style.paddingTop = '250px';
 
         images.forEach(imagePath => {
             const img = document.createElement('img');

@@ -10,10 +10,19 @@ layout: default
     <link rel="stylesheet" href="custom.css">
     <style>
         .carousel-container {
-            width: 100%;
-            max-width: 800px;
+            width: 400px;
+            max-width: 100%;
             margin: 0 auto;
             position: relative;
+        }
+        
+        /* Add styling for code blocks */
+        pre code {
+            display: block;
+            background-color: #434341;
+            padding: 1em;
+            border-radius: 4px;
+            color: #fff;
         }
     </style>
 </head>
