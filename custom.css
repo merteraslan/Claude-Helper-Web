@@ -319,16 +319,16 @@ h2 .tag {
     opacity: 0.8;
 }
 
-/* Carousel Styles */
+/* Update Carousel Styles */
 .carousel-container {
     position: relative;
-    width: 100%;
+    width: 100%; /* Full width of parent */
     max-width: 100%;
     margin: 0 auto 30px;
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid var(--accent-color);
-    padding-top: 62.5%;
+    padding-top: 62.5%; /* 16:10 aspect ratio */
 }
 
 .carousel-slide {

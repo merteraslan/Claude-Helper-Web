@@ -8,14 +8,6 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claude Helper</title>
     <link rel="stylesheet" href="custom.css">
-    <style>
-        .carousel-container {
-            width: 400px;
-            max-width: 100%;
-            margin: 0 auto;
-            position: relative;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
