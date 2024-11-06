@@ -63,10 +63,25 @@ a:hover {
 }
 
 code {
-    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0 !important;
+    background-color: #434341;
     padding: 2px 4px;
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #434341;
+    border-radius: 4px;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+pre code {
+    color: #f0f0f0 !important;
+    background-color: transparent; /* Remove background from nested code */
+    padding: 0; /* Remove padding from nested code */
+    border-radius: 0; /* Remove border radius from nested code */
 }
 
 ul,
@@ -234,7 +249,7 @@ strong {
 }
 
 .separator {
-    margin: 20px 0;
+    margin: 30px 0;
     border: none;
     border-top: 1px solid var(--accent-color);
 }
@@ -244,6 +259,7 @@ strong {
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .sidebar-buttons .button {
@@ -312,13 +328,13 @@ h2 .tag {
 /* Carousel Styles */
 .carousel-container {
     position: relative;
+    width: 400px;
     max-width: 100%;
     margin: 0 auto 30px;
     overflow: hidden;
     border-radius: 8px;
     border: 1px solid var(--accent-color);
     padding-top: 62.5%;
-    position: relative;
 }
 
 .carousel-slide {
@@ -337,6 +353,7 @@ h2 .tag {
     height: 100%;
     object-fit: contain;
     display: none;
+    border-radius: 7px;
 }
 
 .carousel-button {
@@ -389,8 +406,7 @@ h2 .tag {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 10px 0 0 0;
-    margin-bottom: 50px;
+    margin: 10px 0 50px 0;
 }
 
 /* Social Button Base Styles */
