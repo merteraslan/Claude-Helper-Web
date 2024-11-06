@@ -15,15 +15,6 @@ layout: default
             margin: 0 auto;
             position: relative;
         }
-        
-        /* Add styling for code blocks */
-        pre code {
-            display: block;
-            background-color: #434341;
-            padding: 1em;
-            border-radius: 4px;
-            color: #fff;
-        }
     </style>
 </head>
 <body>

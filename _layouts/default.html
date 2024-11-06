@@ -27,22 +27,6 @@
     {% include head-custom.html %}
     <link rel="icon" type="image/png" href="{{ site.favicon }}">
     <meta name="google-site-verification" content="79B-PqCW8jeJvQr6HPRIgfH3YKkSECb6Iz9kdc0zmlo" />
-    <style>
-        code {
-            color: #f8f8f8 !important;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        pre code {
-            color: #f8f8f8 !important;
-            display: block;
-            padding: 1em;
-            overflow-x: auto;
-        }
-    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -84,7 +68,7 @@
         <!-- Add separator and social buttons -->
         <hr class="separator">
 
-        <div class="social-buttons" style="margin-bottom: 50px;">
+        <div class="social-buttons">
           <a href="https://twitter.com/intent/follow?screen_name=mertxnt" class="twitter-follow-button" target="_blank"
             rel="noopener">
             <img src="{{ '/assets/images/x-logo.svg' | relative_url }}" alt="X logo" class="x-logo">
@@ -102,7 +86,7 @@
 
 
       </section>
-      <footer style="margin-top: 30px;">
+      <footer>
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       </footer>
     </div>
